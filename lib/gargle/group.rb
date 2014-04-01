@@ -9,7 +9,7 @@ module Gargle
     end
 
     def run
-      current_scope = @group_in_flight
+      current_scope = @@group_in_flight
       @@group_in_flight = self.name
 
       super
